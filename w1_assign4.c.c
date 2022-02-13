@@ -1,36 +1,41 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+
 #include<stdio.h> 
 
 int main(){
-    int a,b,r;
-    printf("1.Addition,2.Subtraction,3.Multiplication,4.Division,5.Modulus\n");
-    printf("Enter two numbers\n");
-    scanf("%d %d", &a, &b);
-    printf("Enter your choice\n");
-    scanf("%d", &r);
-    switch (r)
-    {
-    case 1:
-        printf("Sum of %d and %d is: %d", a, b, a+b);
-        break;
+    int n;
+    int a,b;
+    printf("enter 2 number:\n");
+    scanf("%d %d" ,&a,&b);
+    printf("here are some arithmetic operation:1.addition,2.subtraction,3.multiplication,4.devision");
+    printf("choose the  operation you want to:");
+    scanf("%d",&n);
+
+    switch(n){
+        case 1:
+            printf("%d+%d=%d",a,b,a+b);
+            break;
+         case 2:
+            printf("%d-%d=%d",a,b,a-b);
+            break;
+         case 3:
+            printf("%d*%d=%d",a,b,a*b);
+            break;
+         case 4:
+            printf("%d/%d=%d",a,b,a/b);
+            break;
         
-    case 2:
-        printf("Subtraction of %d and %d is: %d", a, b, a-b);
-        break;
-        
-    case 3:
-        printf("Multiplication of %d and %d is: %d", a, b, a * b);
-        break;
-        
-    case 4:
-        printf("Division of %d and %d is: %d", a, b, a/b);
-        break;
-        
-    case 5:
-        printf("Modulus of %d and %d is: %d", a, b, a % b);
-        break;
-    
-    default:
-    printf("invalid operation\n");
     }
+
+
+   
     return 0;
 }
+
